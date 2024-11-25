@@ -81,6 +81,20 @@ scp file.txt file.txt.sha256 file.txt.sign public_key.pem linh@10.111.5.171:/hom
 ```
 **Result**
 ![image](https://github.com/user-attachments/assets/6341861c-4185-41ae-90cd-866a63ba4889)
+**5.Verify**
+
+```
+openssl dgst -sha256 -verify public_key.pem -signature file.txt.sign file.txt
+```
+![image](https://github.com/user-attachments/assets/2b1d1faa-7f83-46ad-84ba-b200d52f9e8b)
+
+```
+cat file.txt
+```
+
+![image](https://github.com/user-attachments/assets/796edb5c-6284-4dba-81d1-92afe5bc232e)
+
+
 
 
 
