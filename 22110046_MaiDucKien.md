@@ -187,6 +187,7 @@ sudo systemctl enable apache2
 ssh kien@10.111.5.186
 ```
 ![image](https://github.com/user-attachments/assets/75b26d8d-6bd3-4b3f-abea-7f62228aa417)
+<br>
 **2.Check ping**
 ```
 ping 10.111.5.186
