@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8187ff30-6408-4641-a46c-f94d0e6c4d53)# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
+# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
 # Task 1: Transfer files between computers  
 **Question 1**: 
 Conduct transfering a single plaintext file between 2 computers, 
@@ -35,7 +35,8 @@ sudo systemctl status ssh
 ```
 echo "Day la file can gui tu may kien sang may linh" > file.txt
 ```
-Open file
+
+Open file <br>
 ![image](https://github.com/user-attachments/assets/2365bcf1-7198-457e-a10d-7ffb2e98bc84)
 ```
 cat file.txt
