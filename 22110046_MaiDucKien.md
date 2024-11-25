@@ -125,7 +125,7 @@ cat secret_file.txt
 # Encrypt file with secret key (AES)
 ```
 openssl rand -base64 32 > secret_key.bin
-openssl enc -aes-256-cbc -salt -in secret_file.txt -out secret_file.enc -pass file:./secret_key.bin
+openssl enc -aes-256-cbc -salt -pbkdf2 -in secret_file.txt -out secret_file.enc -pass file:./secret_key.bin
 ```
 # Encrypt secret key with RSA
 ```
