@@ -163,3 +163,34 @@ cat decrypted_file.txt
 # Task 3: Firewall configuration
 **Question 1**:
 From VMs of previous tasks, install iptables and configure one of the 2 VMs as a web and ssh server. Demonstrate your ability to block/unblock http, icmp, ssh requests on the other host.
+**Answer 1**:
+# Check Iptables
+```
+sudo ipatbles -L
+```
+![image](https://github.com/user-attachments/assets/18c08cbc-ad0e-4110-821a-ae8ee62f6a63)
+![image](https://github.com/user-attachments/assets/8007b690-696e-4186-9db9-a60f24a75132)
+# Setup Apache and ssh in Kien
+```
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+```
+
+![image](https://github.com/user-attachments/assets/673e2aac-6afc-4717-a766-0e9a5c304731)
+
+![image](https://github.com/user-attachments/assets/8cf1cb1f-0bf5-43c8-8d30-818ed9b09aca)
+
+# Check ssh,curl,ping from linh to kien
+**1.Check ssh**
+```
+ssh kien@10.111.5.186
+```
+
+![image](https://github.com/user-attachments/assets/75b26d8d-6bd3-4b3f-abea-7f62228aa417)
+
+
+
+
+
+
