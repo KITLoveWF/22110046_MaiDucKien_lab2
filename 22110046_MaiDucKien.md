@@ -201,7 +201,7 @@ curl http://10.111.5.186
 ```
 ![image](https://github.com/user-attachments/assets/852b832b-52df-4922-a1e5-dd2e597c3847)
 
-# Block http,curl,ssh
+# Block http,icmp,ssh
 **1.Block http**
 ```
 sudo iptables -A INPUT -p tcp --dport 80 -s 10.111.5.171 -j DROP
@@ -225,6 +225,7 @@ sudo iptables -A INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
 
 **6.Try ssh** <br>
 ![image](https://github.com/user-attachments/assets/f7f8c63d-5aeb-4844-98eb-f6366045ba21)
+# Unblock http,icmp,ssh
 
 **7.Unblock http**
 ```
