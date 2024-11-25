@@ -11,8 +11,23 @@ then veryfing at receiving side.
 ![image](https://github.com/user-attachments/assets/39b41169-5293-44f5-aa7c-93e4aea762f8)
 ![image](https://github.com/user-attachments/assets/0b2ec286-1d65-45c9-a163-acdec416f446)
 
-Kien have ip 10.111.5.186
-Linh have ip 10.111.5.171
+Kien have ip ***10.111.5.186*** <br>
+Linh have ip ***10.111.5.171*** <br>
+
+setup ssh
+```
+sudo apt update
+sudo apt install openssh-server
+```
+start ssh
+```
+sudo systemctl start ssh
+```
+status ssh
+```
+sudo systemctl status ssh
+```
+
 
 
  
