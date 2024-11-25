@@ -7,6 +7,14 @@ then veryfing at receiving side.
 
 **Answer 1**:
 
+# Prepare client kien and linh
+![image](https://github.com/user-attachments/assets/39b41169-5293-44f5-aa7c-93e4aea762f8)
+![image](https://github.com/user-attachments/assets/0b2ec286-1d65-45c9-a163-acdec416f446)
+
+Kien have ip 10.111.5.186
+Linh have ip 10.111.5.171
+
+
  
 # Task 2: Transfering encrypted file and decrypt it with hybrid encryption. 
 **Question 1**:
