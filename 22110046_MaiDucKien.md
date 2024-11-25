@@ -208,7 +208,7 @@ sudo iptables -A INPUT -p tcp --dport 80 -s 10.111.5.171 -j DROP
 ```
 **2.Block icmp**
 ```
-sudo iptables -D INPUT -p icmp -s 10.111.5.171 -j DROP
+sudo iptables -A INPUT -p icmp -s 10.111.5.171 -j DROP
 ```
 **3.Block ssh**
 ```
@@ -240,7 +240,9 @@ sudo iptables -D INPUT -p icmp -s 10.111.5.171 -j DROP
 ```
 sudo iptables -D INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
 ```
-**Result**
+**Result** <br>
+![image](https://github.com/user-attachments/assets/0198d7df-05ac-4834-a9f7-ac118ebb875c)
+
 
 
 
