@@ -47,6 +47,7 @@ cat file.txt
 ![image](https://github.com/user-attachments/assets/465f12d0-dd69-496f-b308-2201b221daa3)
 
 # Transfering a single plaintext file between 2 computers
+**1.**
 ```
 openssl genrsa -out private_key.pem 2048
 openssl rsa -in private_key.pem -pubout -out public_key.pem
@@ -62,6 +63,25 @@ cat private_key.pem
 cat public_key.pem
 ```
 ![image](https://github.com/user-attachments/assets/e9377a92-d552-40a3-8967-a12a2c06be66)
+
+**2. Calculate the hash of the file:**
+Calculate the file's SHA256 hash to ensure integrity:
+```
+openssl dgst -sha256 -out file.txt.sha256 file.txt
+```
+**3. Create digital signature:**
+Use private key to digitally sign files:
+```
+openssl dgst -sha256 -sign private_key.pem -out file.txt.sign file.txt
+```
+**4. Transfer files to Linh computer:**
+Use scp to transfer files:
+```
+scp file.txt file.txt.sha256 file.txt.sign public_key.pem linh@10.111.5.171:/home/linh
+```
+**Result**
+![image](https://github.com/user-attachments/assets/6341861c-4185-41ae-90cd-866a63ba4889)
+
 
 
 
