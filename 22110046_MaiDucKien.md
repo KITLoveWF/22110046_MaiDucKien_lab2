@@ -1,4 +1,4 @@
-# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
+![image](https://github.com/user-attachments/assets/8187ff30-6408-4641-a46c-f94d0e6c4d53)# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
 # Task 1: Transfer files between computers  
 **Question 1**: 
 Conduct transfering a single plaintext file between 2 computers, 
@@ -186,8 +186,14 @@ sudo systemctl enable apache2
 ```
 ssh kien@10.111.5.186
 ```
-
 ![image](https://github.com/user-attachments/assets/75b26d8d-6bd3-4b3f-abea-7f62228aa417)
+**2.Check ping**
+```
+ping 10.111.5.186
+```
+![image](https://github.com/user-attachments/assets/069fc979-eb24-4881-a474-acd70c9e89af)
+
+
 
 
 
