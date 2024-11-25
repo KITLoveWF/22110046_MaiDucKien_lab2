@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/58af56a9-7a61-4975-9d74-b60bd7d78dd3)# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
+# Lab #2,22110046, Mai Duc Kien, INSE330380E_01FIE
 # Task 1: Transfer files between computers  
 **Question 1**: 
 Conduct transfering a single plaintext file between 2 computers, 
@@ -45,6 +45,26 @@ cat file.txt
 ![image](https://github.com/user-attachments/assets/6412e622-89b3-4934-b2ed-0e05ae5a268f)
 
 ![image](https://github.com/user-attachments/assets/465f12d0-dd69-496f-b308-2201b221daa3)
+
+# Transfering a single plaintext file between 2 computers
+```
+openssl genrsa -out private_key.pem 2048
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+```
+![image](https://github.com/user-attachments/assets/df44847d-ff2f-48e6-8003-0d38b3e69b0a)
+
+```
+cat private_key.pem
+```
+
+![image](https://github.com/user-attachments/assets/591989d8-9a32-4183-9528-7f7d0082c333)
+```
+cat public_key.pem
+```
+![image](https://github.com/user-attachments/assets/e9377a92-d552-40a3-8967-a12a2c06be66)
+
+
+
 
 
 
