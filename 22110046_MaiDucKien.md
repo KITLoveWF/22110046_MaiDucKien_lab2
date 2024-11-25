@@ -201,6 +201,15 @@ curl http://10.111.5.186
 ```
 ![image](https://github.com/user-attachments/assets/852b832b-52df-4922-a1e5-dd2e597c3847)
 
+# Block http,curl,ssh
+**1.Block http**
+```
+sudo iptables -A INPUT -p tcp --dport 80 -s 10.111.5.171 -j DROP
+```
+**2.Block ssh**
+```
+```
+**3.Block Curl**
 
 
 
