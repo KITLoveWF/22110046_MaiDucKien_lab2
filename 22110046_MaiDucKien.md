@@ -195,6 +195,13 @@ ping 10.111.5.186
 ```
 ![image](https://github.com/user-attachments/assets/069fc979-eb24-4881-a474-acd70c9e89af)
 
+**3.Curl**
+```
+curl http://10.111.5.186
+```
+![image](https://github.com/user-attachments/assets/852b832b-52df-4922-a1e5-dd2e597c3847)
+
+
 
 
 
