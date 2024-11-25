@@ -115,6 +115,13 @@ The file is symmetrically encrypted/decrypted by exchanging secret key which is 
 All steps are made manually with openssl at the terminal of each computer.
 
 **Answer 1**:
+# Create File in kien computer
+```
+echo "Kien rat thich linh va mong linh cho kien 1 co hoi " > secret_file.txt
+cat secret_file.txt
+```
+![image](https://github.com/user-attachments/assets/9904f0f1-66a2-4e53-8d7c-2482e767a505)
+
 
 
 # Task 3: Firewall configuration
