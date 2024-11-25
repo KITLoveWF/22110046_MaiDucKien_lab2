@@ -107,6 +107,8 @@ cat file.txt
 
 
 
+
+
  
 # Task 2: Transfering encrypted file and decrypt it with hybrid encryption. 
 **Question 1**:
@@ -120,23 +122,31 @@ All steps are made manually with openssl at the terminal of each computer.
 echo "Kien rat thich linh va mong linh cho kien 1 co hoi " > secret_file.txt
 cat secret_file.txt
 ```
-![image](https://github.com/user-attachments/assets/9904f0f1-66a2-4e53-8d7c-2482e767a505)
 
-# Encrypt file with secret key (AES)
+
+![image](https://github.com/user-attachments/assets/9904f0f1-66a2-4e53-8d7c-2482e767a505)
+# Kien Client
+**1 Encrypt file with secret key (AES)**
 ```
 openssl rand -base64 32 > secret_key.bin
 openssl enc -aes-256-cbc -salt -pbkdf2 -in secret_file.txt -out secret_file.enc -pass file:./secret_key.bin
 ```
-# Encrypt secret key with RSA
+**2 Encrypt secret key with RSA**
 ```
 openssl rsautl -encrypt -inkey public_key.pem -pubin -in secret_key.bin -out secret_key.enc
 ```
-# Send file
+**3. Send file**
 ```
 scp secret_file.enc secret_key.enc private_key.pem linh@10.111.5.171:/home/linh
 ```
 **Result**
 ![image](https://github.com/user-attachments/assets/a6df17c1-1671-4845-94c8-c6f2fb8dcb12)
+
+# Linh Client 
+**4**
+
+![image](https://github.com/user-attachments/assets/8b5699b9-0c55-481d-a54a-1cd76a2c6dcd)
+
 
 
 
