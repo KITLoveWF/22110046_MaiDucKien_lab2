@@ -135,6 +135,9 @@ openssl rsautl -encrypt -inkey public_key.pem -pubin -in secret_key.bin -out sec
 ```
 scp secret_file.enc secret_key.enc private_key.pem linh@10.111.5.171:/home/linh
 ```
+**Result**
+![image](https://github.com/user-attachments/assets/a6df17c1-1671-4845-94c8-c6f2fb8dcb12)
+
 
 
 
