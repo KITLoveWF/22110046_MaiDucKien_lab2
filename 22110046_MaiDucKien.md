@@ -175,7 +175,7 @@ sudo ipatbles -L
 ```
 sudo apt install apache2 -y
 sudo systemctl start apache2
-sudo systemctl enable apache2
+sudo systemctl status apache2
 ```
 
 ![image](https://github.com/user-attachments/assets/673e2aac-6afc-4717-a766-0e9a5c304731)
