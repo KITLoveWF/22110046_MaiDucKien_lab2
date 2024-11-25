@@ -214,6 +214,33 @@ sudo iptables -D INPUT -p icmp -s 10.111.5.171 -j DROP
 ```
 sudo iptables -A INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
 ```
+**Result**
+![image](https://github.com/user-attachments/assets/6fd20dcc-ed49-4422-b3c3-7530e25e4f27)
+
+**4.Try http**
+![image](https://github.com/user-attachments/assets/ca58c065-8305-4e49-86c5-730348b7f083)
+
+**5.Try ICMP(Ping)**
+![image](https://github.com/user-attachments/assets/d705020d-a6bb-4586-9e6b-b46c2291352c)
+
+**6.Try ssh**
+![image](https://github.com/user-attachments/assets/f7f8c63d-5aeb-4844-98eb-f6366045ba21)
+
+**7.Unblock http**
+```
+sudo iptables -D INPUT -p tcp --dport 80 -s 10.111.5.171 -j DROP
+```
+
+**8.Unblock ICMP(Ping)**
+```
+sudo iptables -D INPUT -p icmp -s 10.111.5.171 -j DROP
+```
+
+**9.Unblock ssh**
+```
+sudo iptables -D INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
+```
+**Result**
 
 
 
