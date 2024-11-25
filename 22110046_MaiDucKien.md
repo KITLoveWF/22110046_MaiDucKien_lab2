@@ -47,7 +47,7 @@ cat file.txt
 ![image](https://github.com/user-attachments/assets/465f12d0-dd69-496f-b308-2201b221daa3)
 
 # Transfering a single plaintext file between 2 computers
-**1.**
+**1.Use scp to transfer files:**
 ```
 openssl genrsa -out private_key.pem 2048
 openssl rsa -in private_key.pem -pubout -out public_key.pem
