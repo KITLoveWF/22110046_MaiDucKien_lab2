@@ -122,6 +122,20 @@ cat secret_file.txt
 ```
 ![image](https://github.com/user-attachments/assets/9904f0f1-66a2-4e53-8d7c-2482e767a505)
 
+# Encrypt file with secret key (AES)
+```
+openssl rand -base64 32 > secret_key.bin
+openssl enc -aes-256-cbc -salt -in secret_file.txt -out secret_file.enc -pass file:./secret_key.bin
+```
+# Encrypt secret key with RSA
+```
+openssl rsautl -encrypt -inkey public_key.pem -pubin -in secret_key.bin -out secret_key.enc
+```
+# Send file
+```
+scp secret_file.enc secret_key.enc private_key.pem linh@10.111.5.171:/home/linh
+```
+
 
 
 # Task 3: Firewall configuration
