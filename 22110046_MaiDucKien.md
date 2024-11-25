@@ -206,10 +206,14 @@ curl http://10.111.5.186
 ```
 sudo iptables -A INPUT -p tcp --dport 80 -s 10.111.5.171 -j DROP
 ```
-**2.Block ssh**
+**2.Block icmp**
 ```
+sudo iptables -D INPUT -p icmp -s 10.111.5.171 -j DROP
 ```
-**3.Block Curl**
+**3.Block ssh**
+```
+sudo iptables -A INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
+```
 
 
 
