@@ -163,7 +163,7 @@ cat decrypted_file.txt
 
 # Task 3: Firewall configuration
 **Question 1**:
-From VMs of previous tasks, install iptables and configure one of the 2 VMs as a web and ssh server. Demonstrate your ability to block/unblock http, icmp, ssh requests on the other host.
+From VMs of previous tasks, install iptables and configure one of the 2 VMs as a web and ssh server. Demonstrate your ability to block/unblock http, icmp, ssh requests on the other host. <br>
 **Answer 1**:
 # Check Iptables
 ```
@@ -242,6 +242,7 @@ sudo iptables -D INPUT -p tcp --dport 22 -s 10.111.5.171 -j DROP
 ```
 **Result** <br>
 ![image](https://github.com/user-attachments/assets/0198d7df-05ac-4834-a9f7-ac118ebb875c)
+
 
 
 
