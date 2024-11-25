@@ -143,13 +143,22 @@ scp secret_file.enc secret_key.enc private_key.pem linh@10.111.5.171:/home/linh
 ![image](https://github.com/user-attachments/assets/a6df17c1-1671-4845-94c8-c6f2fb8dcb12)
 
 # Linh Client 
-**4**
 
+**4 Decrypt secret key**
+```
+openssl pkeyutl -decrypt -inkey private_key.pem -in secret_key.enc -out secret_key.bin
+```
+
+**5.Decrypt file with secret key**
+```
+openssl enc -d -aes-256-cbc -salt -pbkdf2 -in secret_file.enc -out decrypted_file.txt -pass file:./secret_key.bin
+```
+
+**Check file**
+```
+cat decrypted_file.txt
+```
 ![image](https://github.com/user-attachments/assets/8b5699b9-0c55-481d-a54a-1cd76a2c6dcd)
-
-
-
-
 
 # Task 3: Firewall configuration
 **Question 1**:
