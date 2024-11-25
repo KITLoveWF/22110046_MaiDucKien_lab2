@@ -27,6 +27,23 @@ status ssh
 ```
 sudo systemctl status ssh
 ```
+![image](https://github.com/user-attachments/assets/aaa717ed-6bfc-4e4c-a04f-8c3e344e0997)
+![image](https://github.com/user-attachments/assets/1e64fe1a-3e40-4416-9fd2-d0ea29e6bc22)
+
+# Create File in kien computer
+![image](https://github.com/user-attachments/assets/ec7aee59-acff-4b26-a442-bdc8ab345b8b)
+Open file
+![image](https://github.com/user-attachments/assets/2365bcf1-7198-457e-a10d-7ffb2e98bc84)
+
+# Ping 2 computer
+![image](https://github.com/user-attachments/assets/6412e622-89b3-4934-b2ed-0e05ae5a268f)
+
+![image](https://github.com/user-attachments/assets/465f12d0-dd69-496f-b308-2201b221daa3)
+
+
+
+
+
 
 
 
